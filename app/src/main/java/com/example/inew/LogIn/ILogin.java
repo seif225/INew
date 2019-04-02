@@ -1,4 +1,8 @@
 package com.example.inew.LogIn;
 
-public class ILogin {
+public interface ILogin {
+
+
+    void signIn(String email,String password);
+    void sendUserToMainActivity();
 }

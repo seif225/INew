@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "753379072397",
+    "firebase_url": "https://inew-18ded.firebaseio.com",
+    "project_id": "inew-18ded",
+    "storage_bucket": "inew-18ded.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753379072397:android:06e61d1182c7a1d9",
+        "android_client_info": {
+          "package_name": "com.example.inew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753379072397-8o83h7o5hfr7n908mmurotdp6ac5iedc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.inew",
+            "certificate_hash": "ff4a2f5ddfea71da282247f6a9cb9903f2bfebe7"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr2zFmE_k1_y306VmsA2GfaWcH2P5aKWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753379072397-1mno872n46ucug4qil92mu64dri3fvo6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

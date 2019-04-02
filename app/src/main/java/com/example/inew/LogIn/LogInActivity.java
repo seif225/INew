@@ -3,6 +3,8 @@ package com.example.inew.LogIn;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.inew.R;
+
 public class LogInActivity extends AppCompatActivity {
 
     @Override

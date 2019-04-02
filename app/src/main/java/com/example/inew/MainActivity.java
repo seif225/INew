@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.inew.Adminstration.UpdateNews;
 import com.example.inew.LogIn.LogInActivity;
 import com.example.inew.splash.splashActivity;
 import com.google.firebase.FirebaseApp;
@@ -117,16 +118,23 @@ public class MainActivity extends AppCompatActivity
     protected void onStart() {
         super.onStart();
         //currentUser= firebaseAuth.getCurrentUser().getUid();
-        if(firebaseAuth.getCurrentUser()==null){
+        if(firebaseAuth.getCurrentUser()==null)
+            sendUserToLoginPage();
+        else if(firebaseAuth.getCurrentUser().getUid().equals("N09009vl3JhqH8rSDXQvHJdi2lT2")){
+            sendUserToAdminPage();
+        }
 
-        sendUserToLoginPage();
 
-    }
 
     }
 
     private void sendUserToLoginPage() {
         Intent i = new Intent(this, splashActivity.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(i);
+    }
+    private void sendUserToAdminPage() {
+        Intent i = new Intent(this, UpdateNews.class);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(i);
     }

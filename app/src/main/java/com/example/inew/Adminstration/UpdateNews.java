@@ -19,7 +19,7 @@ final UpdateNewsPresenter updateNewsPresenter=new UpdateNewsPresenter();
     refresh.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            updateNewsPresenter.getDataFromApi();
+            updateNewsPresenter.getDataFromApi("business");
         }
     });
     }
